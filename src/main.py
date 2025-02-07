@@ -7,7 +7,7 @@ PYPATH = os.path.dirname(__file__)
 class App:
     @cherrypy.expose
     def index(self):
-        return "I like pie!"
+        return "Hello, NAME"
 
     @cherrypy.expose
     def test(self):

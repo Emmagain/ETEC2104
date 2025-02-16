@@ -6,12 +6,14 @@ import datetime
 
 PYPATH = os.path.dirname(__file__)
 
+nlist = ["Abby","Karen","Moxxie","Jeffrey", "Elizabeth","Nathan"]
+
 class App:
     @cherrypy.expose
     def index(self):
+        name = random.choice(nlist)
         home = mako.template.Template(filename=f"{PYPATH}/../html/home.html")
-        return home.render()
-        #return "Hello, NAME"
+        return home.render(Name=name)
 
     @cherrypy.expose
     def signup(self):

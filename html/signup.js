@@ -1,16 +1,16 @@
-function Check(){
-    let theinput = document.getElementById("dob");
-    let dob = theinput.value;
-    theinput = document.getElementById("email");
-    let e = theinput.value;
-    theinput = document.getElementById("name");
-    let n = theinput.value;
-    theinput = document.getElementById("password");
-    let p = theinput.value;
+function check(){
+    let input = document.getElementById("dob");
+    let dob = input.value;
+    input = document.getElementById("email");
+    let e = input.value;
+    input = document.getElementById("name");
+    let n = input.value;
+    input = document.getElementById("password");
+    let p = input.value;
     
     //Fill-in check
     if ( p.length == 0 || dob.length == 0 || e.length == 0 || n.length == 0 ) {
-        alert("Please fill out all information");
+        alert("You have not filled out all boxes");
         return
     }
     

@@ -17,7 +17,18 @@ em.urgent {
     text-align: right;
 }
 
-
+.alert {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #ffcccc;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    box-shadow: 0em 1em 1em rgba(0,0,0,0.5);
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
 
 body {
     background: #ffebfe;
